@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D9D9D9;
+}
+
+.navbar-gog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 56px;
+    width: 100%;
+    color: #CCCCCC;
+}
+
+.navbar-gog>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-container {
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.navbar-elements {
+    width: 70%;
+    height: 54px;
+}
+
+#gog-logo {
+    background-color: white;
+    width: fit-content;
+    padding: 0 2px 0 2px;
+    border-radius: 4px;
+}
+
+#gog-logo:hover {
+    cursor: pointer;
+}
+
+.link {
+    color: #d3d3d3;
+    font-size: 15px;
+}
+
+.link:hover {
+    color: white;
+}
+
+.link>span {
+    float: right;
+    transform: rotate(90deg);
+    font-size: 12px;
+    margin: 2px 0 0 2px;
+}
+
+.nav-icons>i:first-child {
+    font-size: 16px;
+    transform: scaleX(-1);
+}
+
+.nav-icons>* {
+    color: #d3d3d3;
+    cursor: pointer;
+}
+
+.nav-icons>*:hover {
+    color: white
+}
+
+.nav-icons>span {
+    font-size: 11px;
+    margin-left: 1.8px;
+}
+
+.fa-highlighter {
+    font-size: 17px;
+}
+
+#highlight {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 4px;
+    letter-spacing: 0.3px;
+}
+
+.carouselOrg {
+    position: relative;
+}
+
+.carousel__item {
+    height: 505px;
+    background: #D9D9D9;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    display: none;
+}
+
+.carousel__item--selected {
+    display: block;
+}
+
+.carousel__nav {
+    width: 100%;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__button {
+    width: 42px;
+    height: 20px;
+    display: inline-block;
+    background: transparent;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.carousel__item>.initial-cards {
+    max-height: 420px;
+}
+
+.footer-card>div>span:first-child,
+.list-footer>div:nth-child(2)>div>span:first-child {
+    width: fit-content;
+    color: white;
+    background-color: #721E78;
+    border-radius: 2px;
+    padding: 4.5px 8px 4.5px 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-card>div>div>span:first-child,
+.initial-cards .card-body>p {
+    font-size: 12px;
+    color: #545454;
+}
+
+.list-footer {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.list-footer>div:first-child {
+    font-size: 13px;
+}
+
+.footer-card>div>div>span:first-child,
+.list-footer>div:nth-child(2)>div>div:first-of-type>span:first-child {
+    text-decoration: line-through;
+    font-size: 11px;
+}
+
+.footer-card>div>div>span:nth-child(2),
+.list-footer>div:nth-child(2)>div>div:first-of-type>span:nth-child(2) {
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 4px;
+}
+
+.footer-card>div>div:last-child,
+.list-footer>div:nth-child(2)>div>div:last-of-type {
+    background-color: #9BD933;
+    padding: 3px 9px 5px 9px;
+    border-radius: 3px;
+    font-size: medium;
+    color: black;
+}
+
+.hr-line::before {
+    content: "";
+    height: 1px;
+    width: 250px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+
+.hr-line::after {
+    content: "";
+    height: 1px;
+    width: 250px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+
+.header-one>div {
+    font-size: 14px;
+}
+
+.gog-galaxy {
+    width: 290px;
+    color: #721E78;
+}
+
+.header-one>div:first-child>span {
+    color: #721E78;
+}
+
+.header-one>div:nth-last-child(2) {
+    height: 30px;
+    width: 1px;
+    background-color: #848484;
+}
+
+.header-one:hover {
+    cursor: pointer;
+}
+
+.bi-megaphone-fill {
+    transform: rotate(-20deg);
+}
+
+.initial-cards>.col:first-child>.card:hover,
+.initial-cards>.col:nth-child(2)>div>div>.card:hover,
+.initial-cards>.card:hover {
+    cursor: pointer;
+}
+
+.ms-5.d-inline.fw-bold > span:hover {
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.game-list>*:hover {
+    cursor: pointer;
+}
+
+.game-list-btn {
+    color: #721E78;
+    border: 2px solid #721E78;
+    width: 32%;
+    position: relative;
+    top: 25px;
+    left: 35%;
+    margin-bottom: 120px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+
+.game-list-btn:hover {
+    color: #721E78;
+    background-color: #ece7e7;
+}
+
+.side-games>div:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.side-games.mb-1:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.final-cards>.col {
+    width: 254px;
+    height: 264px !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.final-cards>.col:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.newHeight {
+    height: 312px;
+}
+
+.final-cards-footer {
+    margin: 199px 16px 16px 16px
+}
+
+.final-cards-footer>span:first-of-type {
+    position: relative;
+    bottom: 19px
+}
+
+.final-cards-footer>span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+footer {
+    height: 240px;
+    position: relative;
+}
+
+footer>.row:first-child {
+    height: 60px;
+    background-color: #262626;
+    padding: 18px 226px;
+}
+
+footer>.row:nth-child(2) {
+    height: 95px;
+    background-color: #2F2F2F;
+    padding: 16px 226px;
+}
+
+footer>.row:nth-child(3) {
+    height: 81px;
+    background-color: #262626;
+    padding: 23px 226px;
+}
+
+.footer-initial-headers > span {
+    margin-right: 18px;
+    font-size: 14px;
+    color: white;
+    opacity: 0.8;
+}
+
+footer>.row>.col>i {
+    margin-right: 18px;
+    opacity: 0.6;
+    color: white;
+}
+
+footer>img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%
+}
+
+#gog-logo2 {
+    background-color: white;
+    width: fit-content;
+    padding: 0 3px 0 3px;
+    border-radius: 4px;
+}
+
+footer>.row:nth-child(2)>.col-1>div:nth-child(2) {
+    font-size: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+footer>.row:nth-child(2)>.col-1>div:nth-child(2):hover,
+footer>.row>.col>i:hover,
+footer>.row:nth-child(2)>.col-7>div>span:hover,
+.footer-initial-headers > span:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+footer>.row:nth-child(2)>.col-7>div>span,
+footer>.row:nth-child(3)>div>div:nth-child(2) {
+    font-size: 12px;
+    color: white;
+    opacity: 0.6;
+    margin-right: 18px;
+}
+
+footer>.row:nth-child(3)>div>div>span {
+    font-size: 12px;
+    color: white;
+    margin-right: 18px;
+    opacity: 0.6;
+}
+
+footer>.row:nth-child(3)>div>div>span:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+footer>.row:nth-child(3)>div>span {
+    font-size: 12px;
+}
+
+footer>.row:nth-child(3)>div>span>i {
+    top: 4px;
+}
+
+footer>.row:nth-child(3)>div>span>.text-white:hover {
+    cursor: pointer;
+}
+
+.rectangle {
+    width: 228px;
+    height: 59px;
+    background-image: url("/imgs/purple-space2.webp");
+    background-position: center;
+    background-size: cover;
+    background-color: #721E78;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 7px;
+}
+
+.rectangle>.col-10 {
+    padding-left: 7px;
+    padding-right: 0;
+}
+
+.rectangle>.col-10>div:first-child {
+    font-size: 15px;
+    position: relative;
+    top: 3px;
+}
+
+.rectangle>.col-10>div:nth-child(2) {
+    font-size: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+.rectangle:hover {
+    cursor: pointer;
+    ;
+}
+
+
+/* .left-button, .right-button{
+    z-index: 3;
+    position: relative;
+    font-size: 28px;
+}
+
+.left-button {
+    right: 44px;
+    bottom: 250px;
+}
+
+.right-button {
+    margin-left: 102%;
+    right: 0;
+    bottom: 291px;
+} */
